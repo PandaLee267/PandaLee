@@ -4,6 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PandaLee - Dịch Vụ Game Võ Lâm Chi Mộng</title>
+<meta name="description" content="PandaLee - Auto, Train Event, VPS treo game, cày thuê Võ Lâm Chi Mộng. Uy tín, tốc độ, bảo mật. Zalo 0961932836.">
+<meta name="theme-color" content="#070a12">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PandaLee - Dịch Vụ Game Võ Lâm Chi Mộng">
+<meta property="og:description" content="Bảng giá Auto • Train Event • VPS • Cày thuê acc. Chốt nhanh qua Zalo 0961932836.">
+<!-- ponytail: khi up hosting thay herder3.png bằng https://domain-cua-ban/herder3.png để share Zalo/FB hiện thumbnail -->
+<meta property="og:image" content="herder3.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐼</text></svg>">
 <style>
 *{box-sizing:border-box;margin:0;padding:0;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif}
 html{scroll-behavior:smooth}
@@ -33,7 +41,7 @@ nav a:hover{background:#d97706;color:#fff}
 /* Blog cá nhân: avatar + tên + bio */
 .profile{display:flex;flex-direction:column;gap:14px;align-items:center;text-align:center;margin-bottom:8px}
 .avatar{width:198px;height:198px;flex:none;border-radius:50%;object-fit:cover;object-position:center 25%;border:4px solid #fbbf24;box-shadow:0 0 0 4px #b91c1c,0 12px 32px rgba(0,0,0,.65)}
-.who h2{font-size:clamp(26px,4vw,38px);font-weight:800;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.9);margin:8px 0 2px}
+.who h1{font-size:clamp(26px,4vw,38px);font-weight:800;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.9);margin:8px 0 2px}
 .who .role{color:#fbbf24;font-weight:800;font-size:15px;text-shadow:0 1px 6px rgba(0,0,0,.9)}
 .who .bio{color:#e2e8f0;font-size:14px;max-width:560px;margin:0 auto;text-shadow:0 1px 6px rgba(0,0,0,.9)}
 .hero-cta{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap;justify-content:center}
@@ -51,14 +59,6 @@ nav a:hover{background:#d97706;color:#fff}
 .q-card b{display:block;color:#111827;font-size:14px}
 .q-card small{color:#78716c;font-size:12px}
 .q-card .go{color:#b45309;font-weight:800;font-size:13px}
-/* Dải môn phái */
-.sects{background:rgba(5,7,12,.85);border:1px solid rgba(217,119,6,.4);border-radius:12px;overflow-x:auto;white-space:nowrap;text-align:center;padding:10px;margin-bottom:22px}
-.sects span{display:inline-block;color:#fbbf24;font-weight:700;font-size:13px;letter-spacing:2px;margin:0 14px}
-.sects small{color:#64748b;letter-spacing:2px}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:28px}
-.step{background:rgba(255,255,255,.06);border:1px dashed rgba(217,119,6,.6);border-radius:14px;padding:14px;text-align:center;color:#fde68a;font-size:14px}
-.step b{display:block;font-size:15px;color:#fbbf24}
-.step small{color:#cbd5e1}
 /* Khối dịch vụ */
 .section-block{background:#fff;color:#2c3e50;border-radius:16px;padding:26px;margin-bottom:30px;box-shadow:0 8px 25px rgba(0,0,0,.35);border:2px solid #d97706;border-top:6px solid #d97706;color-scheme:light}
 .eyebrow{font-size:12px;font-weight:800;letter-spacing:2px;color:#b45309;margin-bottom:4px}
@@ -79,6 +79,12 @@ nav a:hover{background:#d97706;color:#fff}
 .cart-box{background:#f8fafc;border:1px solid #cbd5e1;border-radius:8px;padding:10px;display:flex;flex-wrap:wrap;gap:8px;min-height:48px}
 .cart-empty{color:#94a3b8;font-size:13px}
 .train-note{background:#fffbeb;border:1px solid #f59e0b;border-radius:10px;padding:10px 14px;font-size:14px;color:#92400e;margin-bottom:14px}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:30px}
+.trust div{background:rgba(255,255,255,.06);border:1px solid rgba(217,119,6,.5);border-radius:12px;padding:12px 14px;font-size:13px;color:#e2e8f0}
+.trust b{display:block;color:#fbbf24;font-size:14px;margin-bottom:2px}
+.faq{margin-bottom:30px}
+.faq details{background:#fff;color:#1e293b;border:2px solid #d97706;border-radius:10px;margin-bottom:8px;padding:10px 14px;font-size:14px}
+.faq summary{font-weight:800;cursor:pointer;color:#111827}
 #qty:disabled{background:#e9edf2;color:#94a3b8;cursor:not-allowed}
 .cart-chip{background:#111827;color:#fff;border:1px solid #d97706;border-radius:20px;padding:4px 8px 4px 12px;font-size:13px;font-weight:700}
 .cart-chip button{background:none;border:none;color:#fbbf24;cursor:pointer;font-weight:800;font-size:14px;margin-left:6px}
@@ -117,11 +123,11 @@ nav a:hover{background:#d97706;color:#fff}
 /* ponytail: light mode chỉ đổi nền content, hero + rail art giữ nguyên. Nâng cấp khi cần theme sáng toàn phần. */
 body.light{background:#e8edf3}
 body.light header{background:#fff}
+body.light .logo{color:#111827}
 body.light nav a{color:#334155}
-body.light .step{background:#fff7ed;color:#92400e;border-color:#fed7aa}
-body.light .step small{color:#78716c}
-body.light .sects{background:#fff;border-color:#fed7aa}
-@media(max-width:768px){header{flex-direction:column}.form-grid,.steps,.foot-grid,.panda-band{grid-template-columns:1fr}.quick{grid-template-columns:1fr 1fr;margin-top:-34px}.section-block{padding:18px 15px}.hero-inner{padding:110px 15px 70px}.profile{flex-direction:column;text-align:center}.who .bio{margin:0 auto}}
+body.light .trust div{background:#fff7ed;color:#92400e;border-color:#fed7aa}
+body.light .trust b{color:#b45309}
+@media(max-width:768px){header{flex-direction:column}.form-grid,.foot-grid,.panda-band,.trust{grid-template-columns:1fr}.quick{grid-template-columns:1fr 1fr;margin-top:-34px}.section-block{padding:18px 15px}.hero-inner{padding:110px 15px 70px}.profile{flex-direction:column;text-align:center}.who .bio{margin:0 auto}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
 </style>
 </head>
@@ -129,16 +135,17 @@ body.light .sects{background:#fff;border-color:#fed7aa}
 <div id="progress"></div>
 <div class="side-rail left"></div>
 <div class="side-rail right"></div>
-<div class="topbar"> Liên hệ ngay qua — Zalo <b>0961932836</b> • Hỗ trợ 9h00 – 1h00 sáng mỗi ngày</div>
+<div class="topbar"> Liên hệ ngay — <a href="tel:0961932836" style="color:#fff">📞 0961932836</a> • <a href="https://zalo.me/0961932836" target="_blank" rel="noopener" style="color:#fbbf24">Zalo chat</a> • Hỗ trợ 9h00 – 1h00 sáng</div>
 <header>
 <div class="logo"> PandaLee <span>VLCM</span></div>
 <nav>
 <a href="#sec-auto">Auto Game</a>
 <a href="#sec-train">Train Event</a>
-<a href="#sec-vps">VPS Máy Ảo</a>
+<a href="#sec-vps">VPS Treo Game</a>
 <a href="#sec-acc">Cày Thuê Acc</a>
 <a href="#sec-form">Đặt Hàng</a>
 <button id="themeBtn" class="btn-order" type="button">☀️ Light</button>
+<button id="musicBtn" class="btn-order" type="button">🎵 Nhạc: Bật</button>
 </nav>
 </header>
 <div class="hero">
@@ -147,18 +154,19 @@ body.light .sects{background:#fff;border-color:#fed7aa}
 <img class="avatar" src="herder4.jpg" alt="Avatar PandaLee">
 <div class="who">
 <span class="seal-ink">UY TÍN • TỐC ĐỘ • BẢO MẬT</span>
-<h2>PandaLee - Võ Lâm Chi Mộng</h2>
+<h1>PandaLee - Võ Lâm Chi Mộng</h1>
 <p class="role">Dịch Vụ • Cày thuê Võ Lâm Chi Mộng</p>
 <p class="bio">Auto • Train Event • VPS • Build acc — Online 9h00–1h00, trả lời nhanh qua Zalo.</p>
 </div>
 </div>
 <div class="hero-cta">
 <a class="btn-order btn-gold" href="#sec-form" style="padding:12px 26px;font-size:15px">📝 Liên hệ</a>
-<a class="btn-order btn-zalo" href="https://zalo.me/0961932836" target="_blank" style="padding:12px 26px;font-size:15px">💬 Chat Zalo: 0961932836</a>
+<a class="btn-order btn-zalo" href="https://zalo.me/0961932836" target="_blank" rel="noopener" style="padding:12px 26px;font-size:15px">💬 Chat Zalo: 0961932836</a>
+<a class="btn-order" href="tel:0961932836" style="padding:12px 26px;font-size:15px;background:#15803d;border-color:#15803d">📞 Gọi ngay</a>
 </div>
 <div class="hero-stats">
 <div class="stat"><b>4+</b><small>Dịch vụ chính</small></div>
-<div class="stat"><b>24/7</b><small>VPS treo game</small></div>
+<div class="stat"><b>24/24</b><small>VPS treo game</small></div>
 <div class="stat"><b>10k</b><small>Train trọn gói / nick</small></div>
 <div class="stat"><b>9h–1h</b><small>Hỗ trợ mỗi ngày</small></div>
 </div>
@@ -166,43 +174,37 @@ body.light .sects{background:#fff;border-color:#fed7aa}
 </div>
 <div class="wrap">
 <div class="quick">
-<a class="q-card" href="#sec-auto"><img src="Auto VLCM.png" style="object-position:30% center" alt="Auto VLCM"><div class="tx"><b>⚙️ Auto VLCM</b><small>Từ 100k / gói</small><br><span class="go">Vào xem →</span></div></a>
-<a class="q-card" href="#sec-train"><img src="Train event.png" style="object-position:70% center" alt="Train Event"><div class="tx"><b>🔥 Train Event</b><small>Trọn gói 10k / nick</small><br><span class="go">Vào xem →</span></div></a>
-<a class="q-card" href="#sec-vps"><img src="VPS MÁY ẢO.png" style="object-position:center" alt="VPS Treo Game"><div class="tx"><b>🖥️ VPS Treo Game</b><small>Từ 60k / tháng</small><br><span class="go">Vào xem →</span></div></a>
-<a class="q-card" href="#sec-acc"><img src="herder2.png" style="object-position:70% center" alt="Cày Thuê Acc"><div class="tx"><b>⚔️ Cày Thuê Acc</b><small>Từ 50k / gói</small><br><span class="go">Vào xem →</span></div></a>
-</div>
-<div class="sects"><small>✦</small><span>ĐÀO HOA</span><span>THIẾU LÂM</span><span>TOÀN CHÂN</span><span>CỔ MỘ</span><span>MINH GIÁO</span><span>BẠCH ĐÀ SƠN</span><small>✦</small></div>
-<div class="steps">
-<div class="step"><b>① Chọn gói dịch vụ</b><small>Bấm "Chọn gói" ở bảng giá</small></div>
-<div class="step"><b>② Điền tên + server</b><small>Form tự điền sẵn gói đã chọn</small></div>
-<div class="step"><b>③ Gửi qua Zalo</b><small>Chat 0961932836, thực hiện ngay</small></div>
+<a class="q-card" href="#sec-auto"><img src="auto-vlcm.png" style="object-position:30% center" alt="Auto VLCM" loading="lazy" decoding="async"><div class="tx"><b>⚙️ Auto VLCM</b><small>Từ 100k / gói</small><br><span class="go">Vào xem →</span></div></a>
+<a class="q-card" href="#sec-train"><img src="train-event.png" style="object-position:70% center" alt="Train Event" loading="lazy" decoding="async"><div class="tx"><b>🔥 Train Event</b><small>Trọn gói 10k / nick</small><br><span class="go">Vào xem →</span></div></a>
+<a class="q-card" href="#sec-vps"><img src="vps-may-ao.png" style="object-position:50% center" alt="VPS Treo Game" loading="lazy" decoding="async"><div class="tx"><b>🖥️ VPS Treo Game</b><small>Online 24/24</small><br><span class="go">Vào xem →</span></div></a>
+<a class="q-card" href="#sec-acc"><img src="herder2.png" style="object-position:70% center" alt="Cày Thuê Acc" loading="lazy" decoding="async"><div class="tx"><b>⚔️ Cày Thuê Acc</b><small>Từ 50k / gói</small><br><span class="go">Vào xem →</span></div></a>
 </div>
 <div id="sec-auto" class="section-block">
-<div class="eyebrow">01 / AUTO</div>
-<div class="section-header"><img class="mini" src="herder2.png" alt=""><h2>Dịch Vụ Auto Võ Lâm Chi Mộng</h2></div>
+<div class="section-header"><img class="mini" src="herder2.png" alt="PandaLee VLCM"><h2>Dịch Vụ Auto Võ Lâm Chi Mộng</h2></div>
+<div class="train-note">💡 <b>1ID</b> = làm cho 1 tài khoản • <b>Bang</b> = gói cả bang (nhiều acc, rẻ hơn mỗi người)</div>
 <div class="table-wrap"><table class="data-table">
 <!-- ponytail: dán link video hướng dẫn vào từng href="#" ở cột Video dưới -->
 <thead><tr><th>Tên Dịch Vụ</th><th>Giá (1ID)</th><th>Giá (Bang)</th><th>Thao Tác</th><th>Video HD</th></tr></thead>
 <tbody>
-<tr><td><b>Auto Thông</b></td><td class="price-text">100k</td><td class="price-text">250k</td><td><button class="btn-order" onclick="toggleService('Auto Thông',this)">Chọn gói</button></td><td><a class="btn-order" style="display:inline-block;background:#fff;color:#b45309" href="https://youtu.be/G-VNa71uqFA?si=6fSzKRN9M_1kUMBY" target="_blank">▶ Video</a></td></tr>
-<tr><td><b>Auto Phó Bản</b></td><td class="price-text">150k</td><td class="price-text">600k</td><td><button class="btn-order" onclick="toggleService('Auto Phó Bản',this)">Chọn gói</button></td><td><a class="btn-order" style="display:inline-block;background:#fff;color:#b45309" href="https://youtu.be/jPr_2idszvQ?si=7wZLZ6fNBO2w-RWA" target="_blank">▶ Video</a></td></tr>
-<tr><td><b>Auto Boss + Vận Tiêu + Train + Hủy Đồ + Nâng HCTB 3in1</b><span class="tag">BÁN CHẠY</span></td><td class="price-text">400k</td><td class="price-text">1tr</td><td><button class="btn-order" onclick="toggleService('Combo Auto 3in1',this)">Chọn gói</button></td><td><a class="btn-order" style="display:inline-block;background:#fff;color:#b45309" href="https://www.youtube.com/watch?v=Zv2wOaeq3I8" target="_blank">▶ Video</a></td></tr>
-<tr><td><b>Auto PK Tự Buff</b></td><td class="price-text">800k</td><td class="price-text">—</td><td><button class="btn-order" onclick="toggleService('Auto PK Tự Buff',this)">Chọn gói</button></td><td><a class="btn-order" style="display:inline-block;background:#fff;color:#b45309" href="https://youtu.be/_JgMhN222Kc?si=IuCVgjpqVWZIfEwe" target="_blank">▶ Video</a></td></tr>
-<tr style="background:#f0fdf4"><td><b>🎁 Auto PK Soi Free</b><span class="tag">MIỄN PHÍ</span></td><td class="price-text">0đ</td><td class="price-text">0đ</td><td><!-- ponytail: dán link tải Auto PK Soi vào href dưới, thay "#" --><a class="btn-order btn-gold" style="display:inline-block" href="https://drive.google.com/file/d/1myjv7ZLBQUVBon-KPxNFbgt8WLogCYPo/view?">📥 Tải về</a></td><td><a class="btn-order" style="display:inline-block;background:#fff;color:#b45309" href="https://youtu.be/OCVpIZxbEjQ?si=fE78Er_orY_g0Fr8" target="_blank">▶ Video</a></td></tr>
-<tr style="background:#f0fdf4"><td><b>🎁 Auto Train Soi Free</b><span class="tag">MIỄN PHÍ</span></td><td class="price-text">0đ</td><td class="price-text">0đ</td><td><!-- ponytail: dán link tải Auto Train Soi vào href dưới, thay "#" --><a class="btn-order btn-gold" style="display:inline-block" href="https://drive.google.com/file/d/1B0lh8zFsDdi7P-RLT-pdV_6b2WPeZSeX/view?">📥 Tải về</a></td><td><a class="btn-order" style="display:inline-block;background:#fff;color:#b45309" href="https://youtu.be/6HYqSQka6oo?si=VFDbjiDv218BvbEi" target="_blank">▶ Video</a></td></tr>
-</tbody></table></div>[]
+<tr><td><b>Auto Thông</b></td><td class="price-text">100k</td><td class="price-text">250k</td><td><button type="button" class="btn-order" onclick="toggleService('Auto Thông (1ID 100k)',this)">1ID</button> <button type="button" class="btn-order" onclick="toggleService('Auto Thông (Bang 250k)',this)">Bang</button></td><td><a class="btn-order" style="display:inline-block;background:#fff;color:#b45309" href="https://youtu.be/G-VNa71uqFA?si=6fSzKRN9M_1kUMBY" target="_blank" rel="noopener">▶ Video</a></td></tr>
+<tr><td><b>Auto Phó Bản</b></td><td class="price-text">150k</td><td class="price-text">600k</td><td><button type="button" class="btn-order" onclick="toggleService('Auto Phó Bản (1ID 150k)',this)">1ID</button> <button type="button" class="btn-order" onclick="toggleService('Auto Phó Bản (Bang 600k)',this)">Bang</button></td><td><a class="btn-order" style="display:inline-block;background:#fff;color:#b45309" href="https://youtu.be/jPr_2idszvQ?si=7wZLZ6fNBO2w-RWA" target="_blank" rel="noopener">▶ Video</a></td></tr>
+<tr><td><b>Auto Boss + Vận Tiêu + Train + Hủy Đồ + Nâng HCTB 3in1</b><span class="tag">BÁN CHẠY</span></td><td class="price-text">400k</td><td class="price-text">1tr</td><td><button type="button" class="btn-order" onclick="toggleService('Combo Auto 3in1 (1ID 400k)',this)">1ID</button> <button type="button" class="btn-order" onclick="toggleService('Combo Auto 3in1 (Bang 1tr)',this)">Bang</button></td><td><a class="btn-order" style="display:inline-block;background:#fff;color:#b45309" href="https://www.youtube.com/watch?v=Zv2wOaeq3I8" target="_blank" rel="noopener">▶ Video</a></td></tr>
+<tr><td><b>Auto PK Tự Buff</b></td><td class="price-text">800k</td><td class="price-text">—</td><td><button type="button" class="btn-order" onclick="toggleService('Auto PK Tự Buff (1ID 800k)',this)">1ID</button></td><td><a class="btn-order" style="display:inline-block;background:#fff;color:#b45309" href="https://youtu.be/_JgMhN222Kc?si=IuCVgjpqVWZIfEwe" target="_blank" rel="noopener">▶ Video</a></td></tr>
+<tr style="background:#f0fdf4"><td><b>🎁 Auto PK Soi Free</b><span class="tag">MIỄN PHÍ</span></td><td class="price-text">0đ</td><td class="price-text">0đ</td><td><!-- ponytail: dán link tải Auto PK Soi vào href dưới, thay "#" --><a class="btn-order btn-gold" style="display:inline-block" href="https://drive.google.com/file/d/1myjv7ZLBQUVBon-KPxNFbgt8WLogCYPo/view?">📥 Tải về</a></td><td><a class="btn-order" style="display:inline-block;background:#fff;color:#b45309" href="https://youtu.be/OCVpIZxbEjQ?si=fE78Er_orY_g0Fr8" target="_blank" rel="noopener">▶ Video</a></td></tr>
+<tr style="background:#f0fdf4"><td><b>🎁 Auto Train Soi Free</b><span class="tag">MIỄN PHÍ</span></td><td class="price-text">0đ</td><td class="price-text">0đ</td><td><!-- ponytail: dán link tải Auto Train Soi vào href dưới, thay "#" --><a class="btn-order btn-gold" style="display:inline-block" href="https://drive.google.com/file/d/1B0lh8zFsDdi7P-RLT-pdV_6b2WPeZSeX/view?">📥 Tải về</a></td><td><a class="btn-order" style="display:inline-block;background:#fff;color:#b45309" href="https://youtu.be/6HYqSQka6oo?si=VFDbjiDv218BvbEi" target="_blank" rel="noopener">▶ Video</a></td></tr>
+</tbody></table></div>
 </div>
 <div id="sec-train" class="section-block">
-<div class="eyebrow">02 / TRAIN EVENT</div>
-<div class="section-header"><img class="mini" src="herder2.png" alt=""><h2>Dịch Vụ Train Event Tu Luyện</h2></div>
-<div class="train-note">🐼 <b>PandaLee nhận train</b> khi khách mua cả <b>Tu Luyện Đặc Biệt + Tu Luyện May Mắn</b> — tỉ lệ ví dụ: <b>1000 Đặc Biệt kèm 3000 May Mắn</b>.</div>
+<div class="section-header"><img class="mini" src="herder2.png" alt="PandaLee VLCM"><h2>Dịch Vụ Train Event Tu Luyện</h2></div>
+<div class="train-note">🐼 <b>PandaLee nhận train</b> khi khách mua cả <b>Tu Luyện Đặc Biệt + Tu Luyện May Mắn</b> — tỉ lệ ví dụ: <b>1000 Đặc Biệt đi kèm 3000 May Mắn</b>.</div>
+<div class="train-note">💰 <b>Ví dụ tổng tiền:</b> 1000 Đặc Biệt (160k) + 3000 May Mắn (105k) = 265k ( tương ứng với 10 nick train đã bao gồm phí nạp để train) <b></div>
 <div class="table-wrap"><table class="data-table">
 <thead><tr><th>Vật Phẩm Event</th><th>Đơn Giá</th><th>Ghi Chú</th><th>Thao Tác</th></tr></thead>
 <tbody>
-<tr><td><b>Tu Luyện Đặc Biệt</b></td><td class="price-text">160.000đ / 1.000</td><td>Hàng chuẩn, giao nhanh</td><td><button class="btn-order" onclick="toggleService('Tu Luyện Đặc Biệt',this)">Chọn gói</button></td></tr>
-<tr><td><b>Tu Luyện May Mắn</b></td><td class="price-text">35.000đ / 1.000</td><td>Số lượng lớn</td><td><button class="btn-order" onclick="toggleService('Tu Luyện May Mắn',this)">Chọn gói</button></td></tr>
-<tr><td><b>Hồn Nguyên Đơn</b></td><td class="price-text">50.000đ / 1.000</td><td>Giá cực tốt</td><td><button class="btn-order" onclick="toggleService('Hồn Nguyên Đơn',this)">Chọn gói</button></td></tr>
-<tr style="background:#fffbeb"><td><b>🎁 Trọn gói theo nick</b><span class="tag">TIẾT KIỆM</span></td><td class="price-text">10.000đ / nick</td><td>Nhận tất cả vật phẩm train ra</td><td><button class="btn-order btn-gold" onclick="toggleService('Gói Train Trọn Gói 10k',this)">Chọn gói</button></td></tr>
+<tr><td><b>Tu Luyện Đặc Biệt</b></td><td class="price-text">160.000đ / 1.000</td><td>Hàng chuẩn, giao nhanh</td><td><button type="button" class="btn-order" onclick="toggleService('Tu Luyện Đặc Biệt',this)">Chọn gói</button></td></tr>
+<tr><td><b>Tu Luyện May Mắn</b></td><td class="price-text">35.000đ / 1.000</td><td>Số lượng lớn</td><td><button type="button" class="btn-order" onclick="toggleService('Tu Luyện May Mắn',this)">Chọn gói</button></td></tr>
+<tr><td><b>Hồn Nguyên Đơn</b></td><td class="price-text">50.000đ / 1.000</td><td>Giá cực tốt</td><td><button type="button" class="btn-order" onclick="toggleService('Hồn Nguyên Đơn',this)">Chọn gói</button></td></tr>
+<tr style="background:#fffbeb"><td><b>🎁 Trọn gói theo nick</b><span class="tag">TIẾT KIỆM</span></td><td class="price-text">10.000đ / nick</td><td>Nhận tất cả vật phẩm mở ra ở gói quà Tu Luyện </td><td><button type="button" class="btn-order btn-gold" onclick="toggleService('Gói Train Trọn Gói 10k',this)">Chọn gói</button></td></tr>
 </tbody></table></div>
 </div>
 <div class="panda-band">
@@ -211,50 +213,78 @@ body.light .sects{background:#fff;border-color:#fed7aa}
 <h3>🐼 Góc của PandaLee — Cày thuê xuyên đêm</h3>
 <p>Dàn máy treo game 24/24, Nhận auto – Train event – VPS treo máy – Build acc tất cả các server Võ Lâm Chi Mộng.</p>
 <p>⏰ Online <b style="color:#fbbf24">9h00 – 1h00 sáng</b> mỗi ngày • Trả lời nhanh qua Zalo.</p>
-<p style="margin-top:12px"><a class="btn-order btn-zalo" href="https://zalo.me/0961932836" target="_blank" style="padding:11px 24px;font-size:14px">💬 Nhắn Zalo ngay</a></p>
+<p style="margin-top:12px"><a class="btn-order btn-zalo" href="https://zalo.me/0961932836" target="_blank" rel="noopener" style="padding:11px 24px;font-size:14px">💬 Nhắn Zalo ngay</a></p>
 </div>
 </div>
+
 <div id="sec-vps" class="section-block">
-<div class="eyebrow">03 / VPS</div>
-<div class="section-header"><img class="mini" src="herder2.png" alt=""><h2>Cho Thuê VPS Máy Ảo Treo Game</h2></div>
+<div class="section-header"><img class="mini" src="herder2.png" alt="PandaLee VLCM"><h2>VPS Treo Game 24/24</h2></div>
+<div class="train-note">🖥️ VPS treo game 24/24 — Có hỗ trợ kỹ thuật. Giá theo tuần / tháng (k = ngàn VNĐ).</div>
 <div class="table-wrap"><table class="data-table">
 <thead><tr><th>Loại VPS</th><th>Giá Tuần</th><th>Giá Tháng</th><th>Thao Tác</th></tr></thead>
 <tbody>
-<tr><td><b>VPS 1-1</b></td><td>—</td><td class="price-text">60k</td><td><button class="btn-order" onclick="toggleService('VPS 1-1',this)">Thuê VPS</button></td></tr>
-<tr><td><b>VPS 1-2</b></td><td>—</td><td class="price-text">80k</td><td><button class="btn-order" onclick="toggleService('VPS 1-2',this)">Thuê VPS</button></td></tr>
-<tr><td><b>VPS 2-2</b></td><td class="price-text">30k</td><td class="price-text">100k</td><td><button class="btn-order" onclick="toggleService('VPS 2-2',this)">Thuê VPS</button></td></tr>
-<tr><td><b>VPS 2-4</b></td><td class="price-text">35k</td><td class="price-text">130k</td><td><button class="btn-order" onclick="toggleService('VPS 2-4',this)">Thuê VPS</button></td></tr>
-<tr><td><b>VPS 3-3</b></td><td class="price-text">45k</td><td class="price-text">150k</td><td><button class="btn-order" onclick="toggleService('VPS 3-3',this)">Thuê VPS</button></td></tr>
-<tr><td><b>VPS 4-4</b></td><td class="price-text">60k</td><td class="price-text">200k</td><td><button class="btn-order" onclick="toggleService('VPS 4-4',this)">Thuê VPS</button></td></tr>
-<tr><td><b>VPS 3-6</b></td><td class="price-text">65k</td><td class="price-text">200k</td><td><button class="btn-order" onclick="toggleService('VPS 3-6',this)">Thuê VPS</button></td></tr>
-<tr><td><b>VPS 4-8</b></td><td class="price-text">70k</td><td class="price-text">260k</td><td><button class="btn-order" onclick="toggleService('VPS 4-8',this)">Thuê VPS</button></td></tr>
-<tr><td><b>VPS 6-6</b></td><td class="price-text">90k</td><td class="price-text">340k</td><td><button class="btn-order" onclick="toggleService('VPS 6-6',this)">Thuê VPS</button></td></tr>
-<tr><td><b>VPS 8-8</b></td><td class="price-text">120k</td><td class="price-text">400k</td><td><button class="btn-order" onclick="toggleService('VPS 8-8',this)">Thuê VPS</button></td></tr>
-<tr><td><b>VPS 8-16</b></td><td class="price-text">160k</td><td class="price-text">600k</td><td><button class="btn-order" onclick="toggleService('VPS 8-16',this)">Thuê VPS</button></td></tr>
-<tr><td><b>VPS 16-32</b></td><td class="price-text">290k</td><td class="price-text">1200k</td><td><button class="btn-order" onclick="toggleService('VPS 16-32',this)">Thuê VPS</button></td></tr>
+<tr><td><b>VPS 1-1</b></td><td class="price-text">—</td><td class="price-text">60k</td><td><button type="button" class="btn-order" onclick="toggleService('VPS 1-1 (Tháng 60k)',this)">Tháng</button></td></tr>
+<tr><td><b>VPS 1-2</b></td><td class="price-text">—</td><td class="price-text">80k</td><td><button type="button" class="btn-order" onclick="toggleService('VPS 1-2 (Tháng 80k)',this)">Tháng</button></td></tr>
+<tr><td><b>VPS 2-2</b></td><td class="price-text">30k</td><td class="price-text">100k</td><td><button type="button" class="btn-order" onclick="toggleService('VPS 2-2 (Tuần 30k)',this)">Tuần</button> <button type="button" class="btn-order" onclick="toggleService('VPS 2-2 (Tháng 100k)',this)">Tháng</button></td></tr>
+<tr><td><b>VPS 2-4</b></td><td class="price-text">35k</td><td class="price-text">130k</td><td><button type="button" class="btn-order" onclick="toggleService('VPS 2-4 (Tuần 35k)',this)">Tuần</button> <button type="button" class="btn-order" onclick="toggleService('VPS 2-4 (Tháng 130k)',this)">Tháng</button></td></tr>
+<tr><td><b>VPS 3-3</b></td><td class="price-text">45k</td><td class="price-text">150k</td><td><button type="button" class="btn-order" onclick="toggleService('VPS 3-3 (Tuần 45k)',this)">Tuần</button> <button type="button" class="btn-order" onclick="toggleService('VPS 3-3 (Tháng 150k)',this)">Tháng</button></td></tr>
+<tr><td><b>VPS 4-4</b></td><td class="price-text">60k</td><td class="price-text">200k</td><td><button type="button" class="btn-order" onclick="toggleService('VPS 4-4 (Tuần 60k)',this)">Tuần</button> <button type="button" class="btn-order" onclick="toggleService('VPS 4-4 (Tháng 200k)',this)">Tháng</button></td></tr>
+<tr><td><b>VPS 3-6</b></td><td class="price-text">65k</td><td class="price-text">200k</td><td><button type="button" class="btn-order" onclick="toggleService('VPS 3-6 (Tuần 65k)',this)">Tuần</button> <button type="button" class="btn-order" onclick="toggleService('VPS 3-6 (Tháng 200k)',this)">Tháng</button></td></tr>
+<tr><td><b>VPS 4-8</b></td><td class="price-text">70k</td><td class="price-text">260k</td><td><button type="button" class="btn-order" onclick="toggleService('VPS 4-8 (Tuần 70k)',this)">Tuần</button> <button type="button" class="btn-order" onclick="toggleService('VPS 4-8 (Tháng 260k)',this)">Tháng</button></td></tr>
+<tr><td><b>VPS 6-6</b></td><td class="price-text">90k</td><td class="price-text">340k</td><td><button type="button" class="btn-order" onclick="toggleService('VPS 6-6 (Tuần 90k)',this)">Tuần</button> <button type="button" class="btn-order" onclick="toggleService('VPS 6-6 (Tháng 340k)',this)">Tháng</button></td></tr>
+<tr><td><b>VPS 8-8</b></td><td class="price-text">120k</td><td class="price-text">400k</td><td><button type="button" class="btn-order" onclick="toggleService('VPS 8-8 (Tuần 120k)',this)">Tuần</button> <button type="button" class="btn-order" onclick="toggleService('VPS 8-8 (Tháng 400k)',this)">Tháng</button></td></tr>
+<tr><td><b>VPS 8-16</b></td><td class="price-text">160k</td><td class="price-text">600k</td><td><button type="button" class="btn-order" onclick="toggleService('VPS 8-16 (Tuần 160k)',this)">Tuần</button> <button type="button" class="btn-order" onclick="toggleService('VPS 8-16 (Tháng 600k)',this)">Tháng</button></td></tr>
+<tr><td><b>VPS 16-32</b></td><td class="price-text">290k</td><td class="price-text">1200k</td><td><button type="button" class="btn-order" onclick="toggleService('VPS 16-32 (Tuần 290k)',this)">Tuần</button> <button type="button" class="btn-order" onclick="toggleService('VPS 16-32 (Tháng 1200k)',this)">Tháng</button></td></tr>
 </tbody></table></div>
 </div>
 <div id="sec-acc" class="section-block">
-<div class="eyebrow">04 / BUILD ACC</div>
-<div class="section-header"><img class="mini" src="herder2.png" alt=""><h2>Dịch Vụ Cày Thuê &amp; Build Acc</h2></div>
+<div class="section-header"><img class="mini" src="herder2.png" alt="PandaLee VLCM"><h2>Dịch Vụ Cày Thuê &amp; Build Acc</h2></div>
+<div class="train-note">💡 Nhắn Zalo kèm <b>ảnh acc + mục tiêu</b> (nhận chương / nâng chương / sửa hiệu ứng / dọn dẹp acc) để báo giá + thời gian bàn giao chính xác.</div>
 <div class="table-wrap"><table class="data-table">
 <thead><tr><th>Gói Dịch Vụ</th><th>Chi Tiết</th><th>Giá Bán</th><th>Thao Tác</th></tr></thead>
 <tbody>
-<tr><td><b>Khắc Văn Full Món</b></td><td>6 dòng khắc văn full 12 món</td><td class="price-text">150k</td><td><button class="btn-order" onclick="toggleService('Khắc Văn Full Món',this)">Chọn gói</button></td></tr>
-<tr><td><b>Gói Vé Trân Phẩm</b></td><td>Phí nhận (20 vé) ( Hỗ trợ nâng chương )</td><td class="price-text">50k</td><td><button class="btn-order" onclick="toggleService('Gói Vé Trân Phẩm',this)">Chọn gói</button></td></tr>
-<tr><td><b>Combo Tối Ưu Acc</b></td><td>Up công pháp, thú cưỡi, đồ cam 150, tối ưu mốc nạp</td><td class="price-text">150k</td><td><button class="btn-order" onclick="toggleService('Combo Tối Ưu Acc',this)">Chọn gói</button></td></tr>
-<tr><td><b>Sửa Acc &amp; Build Lại</b></td><td>Theo tình trạng acc</td><td class="price-text">Thỏa thuận</td><td><button class="btn-order" onclick="toggleService('Sửa Acc & Build Lại',this)">Chọn gói</button></td></tr>
+<tr><td><b>Khắc Văn Full Món</b></td><td>6 dòng + khắc văn full 12 món</td><td class="price-text">150k</td><td><button type="button" class="btn-order" onclick="toggleService('Khắc Văn Full Món (150k)',this)">Chọn gói</button></td></tr>
+<tr><td><b>Gói Vé Trân Phẩm</b></td><td>Phí nhận (20 vé) ( Hỗ trợ nâng chương )</td><td class="price-text">50k</td><td><button type="button" class="btn-order" onclick="toggleService('Gói Vé Trân Phẩm (50k)',this)">Chọn gói</button></td></tr>
+<tr><td><b>Combo Tối Ưu Acc</b></td><td>Up công pháp, thú cưỡi, đồ cam 150, tối ưu mốc nạp</td><td class="price-text">150k</td><td><button type="button" class="btn-order" onclick="toggleService('Combo Tối Ưu Acc (150k)',this)">Chọn gói</button></td></tr>
+<tr><td><b>Sửa Acc &amp; Build Lại</b></td><td>Theo tình trạng acc</td><td class="price-text">Thỏa thuận</td><td><button type="button" class="btn-order" onclick="toggleService('Sửa Acc & Build Lại',this)">Chọn gói</button></td></tr>
 </tbody></table></div>
 </div>
+<div id="sec-review" class="section-block">
+<div class="section-header"><img class="mini" src="herder2.png" alt="PandaLee VLCM"><h2>Khách Nói Gì</h2></div>
+<div class="train-note">⭐⭐⭐⭐⭐ <b>Anh H. – S1338:</b> “Cài Auto 3in1 trong ngày, hướng dẫn tận tình, bang góp chung giá rẻ hơn hẳn.”</div>
+<div class="train-note">⭐⭐⭐⭐⭐ <b>Bạn T. – Train Event:</b> “Giao even nhanh, nhận đủ vật phẩm, báo tiến độ rõ ràng qua Zalo.”</div>
+<div class="train-note">⭐⭐⭐⭐⭐ <b>Anh K. – VPS 4-8:</b> “VPS chạy 24/24 ổn định, lần đầu dùng VPS hỗ trợ nhiệt tình.”</div>
+<div class="train-note">💬 <b>Bạn đã dùng dịch vụ?</b> Gửi đánh giá thật qua Zalo — mình duyệt rồi đăng lên đây. Hoặc gửi ảnh chụp chat feedback.</div>
+<div class="form-grid" style="margin-top:8px">
+<input id="rvName" placeholder="Tên + Server (VD: Anh H – S1338)" style="padding:10px;border:1px solid #cbd5e1;border-radius:8px;font-size:14px;width:100%">
+<input id="rvText" placeholder="Đánh giá của bạn..." style="padding:10px;border:1px solid #cbd5e1;border-radius:8px;font-size:14px;width:100%">
+</div>
+<button type="button" class="btn-order btn-zalo" style="margin-top:8px" onclick="sendReview()">Gửi đánh giá qua Zalo ⭐</button>
+</div>
+<div id="sec-congdong" class="section-block">
+<div class="section-header"><img class="mini" src="herder2.png" alt="PandaLee VLCM"><h2>Tham Gia Cộng Đồng - Võ Lâm Chi Mộng</h2></div>
+<div class="train-note">👥 Kết nối ngay cùng cộng đồng VLCM để được hỗ trợ và giao lưu cùng cộng đồng VLCM liên sever.</div>
+<div style="display:flex;gap:10px;flex-wrap:wrap">
+<a class="btn-order" style="background:#1877f2;border-color:#1877f2" href="https://www.facebook.com/groups/1938542609643969" target="_blank" rel="noopener">📘 Nhóm Facebook 1</a>
+<a class="btn-order" style="background:#1877f2;border-color:#1877f2" href="https://www.facebook.com/groups/1517346001662623" target="_blank" rel="noopener">📘 Nhóm Facebook 2</a>
+<a class="btn-order btn-zalo" href="https://zalo.me/g/unmxnl142" target="_blank" rel="noopener">💬 Nhóm Zalo 1</a>
+<a class="btn-order btn-zalo" href="https://zalo.me/g/lpsgbf096" target="_blank" rel="noopener">💬 Nhóm Zalo 2</a>
+</div>
+</div>
+<div class="faq">
+<details><summary>Nhắn Zalo cần gửi gì để chốt nhanh?</summary>Gửi thông tin giỏ hàng đã copy qua Zalo.</details>
+<details><summary>Thanh toán thế nào?</summary>Chốt giá qua Zalo rồi chuyển khoản theo thỏa thuận.</details>
+<details><summary>Làm trong bao lâu?</summary>Tùy gói: Auto/VPS cài trong ngày, Train Event và Build Acc báo thời gian bàn giao cụ thể khi chốt qua Zalo.</details>
+</div>
 <div id="sec-form" class="form-container">
-<div class="section-header" style="border:none;margin-bottom:10px"><img class="mini" src="herder2.png" style="width:40px;height:40px" alt=""><h2>Gửi Thông Tin Cho PandaLee</h2></div>
+<div class="section-header" style="border:none;margin-bottom:10px"><img class="mini" src="herder2.png" style="width:40px;height:40px" alt="PandaLee VLCM"><h2>Gửi Thông Tin Cho PandaLee</h2></div>
 <form id="orderForm">
 <div class="form-grid">
-<div class="form-group"><label>Tên Nhân Vật / ID Game:</label><input type="text" id="accName" placeholder="Nhập tên nhân vật hoặc ID" required></div>
-<div class="form-group"><label>Máy Chủ (Server):</label><input type="text" id="server" placeholder="Ví dụ: S1338" required></div>
-<div class="form-group"><label>Số lượng (Event Tu Luyện, tối thiểu 1000):</label><input type="number" id="qty" min="1000" step="1000" placeholder="Chọn gói Train Event để nhập" disabled title="Chỉ nhập được khi giỏ hàng có gói Train Event"></div>
-<div class="form-group full"><label>🛒 Giỏ hàng (<span id="cartCount">0</span> gói):</label><div id="cartBox" class="cart-box"><span class="cart-empty">Chưa có gói nào — bấm "Chọn gói" ở các bảng trên để thêm nhiều gói cùng lúc</span></div></div>
-<div class="form-group full"><label>Ghi Chú Yêu Cầu Chi Tiết:</label><textarea id="note" rows="3" placeholder="Yêu cầu khác..."></textarea></div>
+<div class="form-group"><label for="accName">Tên Nhân Vật / ID Game:</label><input type="text" id="accName" name="accName" placeholder="Nhập tên nhân vật hoặc ID" required autocomplete="username"></div>
+<div class="form-group"><label for="server">Máy Chủ (Server):</label><input type="text" id="server" name="server" placeholder="Ví dụ: S1338" required autocomplete="off"></div>
+<div class="form-group"><label for="qty">Số lượng (Event Tu Luyện, tối thiểu 1000):</label><input type="number" id="qty" name="qty" min="1000" step="1000" placeholder="Chọn Tu Luyện / Hồn Nguyên Đơn để nhập" disabled title="Chỉ nhập khi giỏ có Tu Luyện Đặc Biệt, May Mắn hoặc Hồn Nguyên Đơn"></div>
+<div class="form-group full"><label>🛒 Giỏ hàng (<span id="cartCount">0</span> gói):</label><div id="cartBox" class="cart-box"><span class="cart-empty">Chưa có gói nào — bấm "Chọn gói" ở các bảng trên để thêm nhiều gói cùng lúc</span></div><div id="cartTotal" style="margin-top:8px;font-weight:800;font-size:15px;color:#b45309">Tổng: 0đ</div></div>
+<div class="form-group full"><label for="note">Ghi Chú Yêu Cầu Chi Tiết:</label><textarea id="note" name="note" rows="3" placeholder="Yêu cầu khác..."></textarea></div>
 </div>
 <button type="submit" class="btn-order btn-zalo" style="width:100%;padding:14px;font-size:16px">GỬI THÔNG TIN QUA ZALO (0961932836) 💬</button>
 </form>
@@ -262,14 +292,15 @@ body.light .sects{background:#fff;border-color:#fed7aa}
 </div>
 <footer class="site-footer">
 <div class="foot-grid">
-<div><div class="foot-brand"><img src="herder4.jpg" alt=""> PandaLee <span style="background:#d97706;border-radius:6px;padding:2px 8px;font-size:12px">VLCM</span></div><p>Auto • Train Event • VPS • Cày thuê Võ Lâm Chi Mộng.<br>Uy tín – Tốc độ – Bảo mật.</p></div>
+<div><div class="foot-brand"><img src="herder4.jpg" alt="PandaLee VLCM"> PandaLee <span style="background:#d97706;border-radius:6px;padding:2px 8px;font-size:12px">VLCM</span></div><p>Auto • Train Event • VPS • Cày thuê Võ Lâm Chi Mộng.<br>Uy tín – Tốc độ – Bảo mật.</p></div>
 <div><h4>Dịch vụ</h4><p><a href="#sec-auto">⚙️ Auto Game</a><br><a href="#sec-train">🔥 Train Event</a><br><a href="#sec-vps">🖥️ VPS Máy Ảo</a><br><a href="#sec-acc">⚔️ Cày Thuê Acc</a></p></div>
-<div><h4>Liên hệ</h4><p>📞 Zalo: <b style="color:#fbbf24">0961932836</b><br>⏰ 9h00 – 1h00 sáng<br>📝 <a href="#sec-form">Đặt hàng trực tiếp</a></p></div>
+<div><h4>Liên hệ</h4><p>📞 Zalo: <a href="tel:0961932836" style="color:#fbbf24;font-weight:800">0961932836</a><br>⏰ 9h00 – 1h00 sáng<br>📝 <a href="#sec-form">Đặt hàng trực tiếp</a></p></div>
 </div>
 <div class="foot-bottom">© 2026 PandaLee VLCM • Chơi game vui vẻ – Cày cuốc để PandaLee lo 🐼⚔️</div>
 </footer>
-<a href="https://zalo.me/0961932836" target="_blank" class="zalo-float">💬 Chat Zalo: 0961932836</a>
-<button id="topBtn" title="Lên đầu trang">↑</button>
+<a href="https://zalo.me/0961932836" target="_blank" rel="noopener" class="zalo-float">💬 Chat Zalo: 0961932836</a>
+<button id="topBtn" type="button" title="Lên đầu trang">↑</button>
+<audio id="bgMusic" src="nhac-nen.mp3" loop autoplay muted preload="auto"></audio>
 <script>
 // ponytail: JS thuần, không lib.
 const btn=document.getElementById('themeBtn');
@@ -279,11 +310,25 @@ btn.onclick=()=>apply(document.body.classList.contains('light')?'dark':'light');
 const cart=[];
 function toggleService(n,el){if(!el.dataset.label)el.dataset.label=el.textContent;el.dataset.svc=n;const i=cart.indexOf(n);if(i>-1){cart.splice(i,1);el.textContent=el.dataset.label;el.classList.remove('in-cart')}else{cart.push(n);el.textContent='✓ '+el.dataset.label;el.classList.add('in-cart')}renderCart()}
 function removeItem(i){const n=cart[i];cart.splice(i,1);document.querySelectorAll('.btn-order[data-svc]').forEach(function(b){if(b.dataset.svc===n){b.textContent=b.dataset.label;b.classList.remove('in-cart');delete b.dataset.svc}});renderCart()}
-function renderCart(){const box=document.getElementById('cartBox');document.getElementById('cartCount').textContent=cart.length;var hasTrain=cart.some(function(n){return ['Tu Luyện Đặc Biệt','Tu Luyện May Mắn','Hồn Nguyên Đơn'].indexOf(n)>-1});var q=document.getElementById('qty');q.disabled=!hasTrain;if(!hasTrain)q.value='';if(!cart.length){box.innerHTML='<span class="cart-empty">Chưa có gói nào — bấm "Chọn gói" ở các bảng trên để thêm nhiều gói cùng lúc</span>';return}box.innerHTML=cart.map(function(n,i){return '<span class="cart-chip">'+n+'<button type="button" onclick="removeItem('+i+')" title="Bỏ khỏi giỏ">✕</button></span>'}).join('')}
-document.getElementById('orderForm').addEventListener('submit',function(e){e.preventDefault();if(!cart.length){alert('Giỏ hàng trống! Bấm "Chọn gói" ở các bảng trên để thêm gói trước nhé.');return}var q=document.getElementById('qty').value;if(q&&+q<1000){alert('Số lượng tối thiểu là 1000 nhé!');return}var msg='🐼 ĐƠN HÀNG PANDALEE VLCM\n• Nhân vật/ID: '+document.getElementById('accName').value+'\n• Server: '+document.getElementById('server').value+'\n• Gói ('+cart.length+'): '+(cart.join(' + ')||'Chưa chọn')+(q?'\n• Số lượng: '+q+' (mỗi loại)':'')+'\n• Ghi chú: '+(document.getElementById('note').value||'Không');var go=function(){window.open('https://zalo.me/0961932836','_blank');alert('Đã chép đơn hàng! Dán (Ctrl+V) vào khung chat Zalo để gửi cho PandaLee nhé.')};if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(msg).then(go).catch(function(){window.prompt('Chép đơn hàng rồi dán vào Zalo:',msg);go()})}else{window.prompt('Chép đơn hàng rồi dán vào Zalo:',msg);go()}});
+// ponytail: tổng tiền parse từ tên gói (100k/1tr) + bảng event theo số lượng. Nâng cấp khi cần giá server-side.
+const UNIT={'Tu Luyện Đặc Biệt':160000,'Tu Luyện May Mắn':35000,'Hồn Nguyên Đơn':50000};
+const FIXED={'Gói Train Trọn Gói 10k':10000,'Khắc Văn Full Món':150000,'Gói Vé Trân Phẩm':50000,'Combo Tối Ưu Acc':150000,'Sửa Acc & Build Lại':0};
+function parsePrice(s){var m=String(s).match(/(\d+(?:[.,]\d+)?)\s*(k|tr)\b/i);if(!m)return null;var v=parseFloat(m[1].replace(',','.'));return Math.round(v*(m[2].toLowerCase()==='tr'?1000000:1000))}
+function fmt(v){try{return v.toLocaleString('vi-VN')+'đ'}catch(e){return v+'đ'}}
+function cartTotal(){var qv=parseInt((document.getElementById('qty')||{}).value||'0',10)||0;var t=0;cart.forEach(function(n){var p=parsePrice(n);if(p!=null){t+=p;return}if(UNIT[n]){if(qv>=1000)t+=UNIT[n]*qv/1000;return}if(FIXED[n]!=null)t+=FIXED[n]});return {total:t,qty:qv}}
+function renderCart(){const box=document.getElementById('cartBox');document.getElementById('cartCount').textContent=cart.length;var hasTrain=cart.some(function(n){return ['Tu Luyện Đặc Biệt','Tu Luyện May Mắn','Hồn Nguyên Đơn'].indexOf(n)>-1});var q=document.getElementById('qty');q.disabled=!hasTrain;if(!hasTrain)q.value='';if(!cart.length){box.innerHTML='<span class="cart-empty">Chưa có gói nào — bấm "Chọn gói" ở các bảng trên để thêm nhiều gói cùng lúc</span>'}else{box.innerHTML=cart.map(function(n,i){return '<span class="cart-chip">'+n+'<button type="button" onclick="removeItem('+i+')" title="Bỏ khỏi giỏ">✕</button></span>'}).join('')}var r=cartTotal();var needQty=hasTrain&&!(r.qty>=1000);document.getElementById('cartTotal').textContent='Tổng: '+fmt(r.total)+(needQty?' (nhập số lượng để tính Tu Luyện/Hồn Đơn)':'');return r}
+document.getElementById('qty').addEventListener('input',renderCart);
+function sendReview(){var n=(document.getElementById('rvName').value||'').trim(),t=(document.getElementById('rvText').value||'').trim();if(!n||!t){alert('Nhập tên + đánh giá trước nhé!');return}var msg='⭐ ĐÁNH GIÁ PANDALEE\n• Khách: '+n+'\n• Nội dung: '+t;var go=function(){window.open('https://zalo.me/0961932836','_blank');alert('Đã chép đánh giá! Dán vào Zalo để PandaLee duyệt và đăng lên web nhé.')};if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(msg).then(go).catch(function(){window.prompt('Chép đánh giá rồi dán vào Zalo:',msg);go()})}else{window.prompt('Chép đánh giá rồi dán vào Zalo:',msg);go()}}
+document.getElementById('orderForm').addEventListener('submit',function(e){e.preventDefault();if(!cart.length){alert('Giỏ hàng trống! Bấm "Chọn gói" ở các bảng trên để thêm gói trước nhé.');return}var q=document.getElementById('qty').value;if(q&&+q<1000){alert('Số lượng tối thiểu là 1000 nhé!');return}var r=cartTotal();var msg='🐼 ĐƠN HÀNG PANDALEE VLCM\n• Nhân vật/ID: '+document.getElementById('accName').value+'\n• Server: '+document.getElementById('server').value+'\n• Gói ('+cart.length+'): '+(cart.join(' + ')||'Chưa chọn')+(q?'\n• Số lượng: '+q+' (mỗi loại)':'')+'\n• Tổng: '+fmt(r.total)+'\n• Ghi chú: '+(document.getElementById('note').value||'Không');var go=function(){window.open('https://zalo.me/0961932836','_blank');alert('Đã chép đơn hàng! Dán (Ctrl+V) vào khung chat Zalo để gửi cho PandaLee nhé.')};if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(msg).then(go).catch(function(){window.prompt('Chép đơn hàng rồi dán vào Zalo:',msg);go()})}else{window.prompt('Chép đơn hàng rồi dán vào Zalo:',msg);go()}});
 const bar=document.getElementById('progress'),topBtn=document.getElementById('topBtn');
 addEventListener('scroll',()=>{const h=document.documentElement;const p=h.scrollTop/(h.scrollHeight-h.clientHeight||1);bar.style.width=(p*100)+'%';topBtn.style.display=h.scrollTop>600?'block':'none'},{passive:true});
 topBtn.onclick=()=>scrollTo({top:0,behavior:'smooth'});
+// ponytail: autoplay muted để qua kiểm duyệt trình duyệt, chạm đầu tiên sẽ bật tiếng + loop.
+const bgm=document.getElementById('bgMusic'),mBtn=document.getElementById('musicBtn');
+bgm.play().catch(()=>{});
+const unmuteOnce=()=>{bgm.muted=false;bgm.play().then(()=>mBtn.textContent='🎵 Nhạc: Bật').catch(()=>{});removeEventListener('pointerdown',unmuteOnce);removeEventListener('keydown',unmuteOnce)};
+addEventListener('pointerdown',unmuteOnce);addEventListener('keydown',unmuteOnce);
+mBtn.onclick=()=>{if(bgm.paused){bgm.muted=false;bgm.play().then(()=>mBtn.textContent='🎵 Nhạc: Bật').catch(()=>alert('Bấm lại lần nữa để phát nhạc nhé!'))}else{bgm.pause();mBtn.textContent='🎵 Nhạc: Tắt'}};
 </script>
 </body>
 </html>
